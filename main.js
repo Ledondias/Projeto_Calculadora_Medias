@@ -46,7 +46,7 @@ function updateTable(){
 function finalMediaUpdate() {
     const finalMedia = finalMediaCalc()
 
-    document.getElementById('final-media-value').innerHTML = finalMedia
+    document.getElementById('final-media-value').innerHTML = finalMedia.toFixed(2)
     document.getElementById('final-media-result').innerHTML = finalMedia >= minimumNote ? spanApproved : spanDisapproved
 }
 
